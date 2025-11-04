@@ -1,20 +1,29 @@
-# Fraud-Detection
-Fraud in insurance is more common than we think since in most cases it goes undetected. Unless Insurers make it their business to catch these fraudulent cases, then they will continue to lose more money due to fraud. 
+# 🕵️‍♂️ Fraud Detection in Medical Insurance
 
-This is a model to detect fraud in medical insurance claims using clustering, anomaly detection and reinforced learning using a supervised algorithm.
+Fraud in insurance is more common than we think, as many cases go undetected.  
+Unless insurers actively detect fraudulent claims, they risk losing substantial amounts of money.  
 
-### steps Involved
-- Module imports
-- Data imports
-- Does Exploratory data analysis
-- Does feature engineering
-- Does feature standardization
-- uses Bisecting K-means algorithim to cluster the data points.
-- uses silhoutte score to determine if the data points are well clustered.
-- After clustering, I also use the isolation forest algorithm to detect anomalies in the dataset
-- Since there are a few known cases, I combine my dataset with the known fraudulent cases with fraud_type and Is_fraud (Binary)
-- Split the data for training and testing 
-- Train a randomforestclassifier model using multioutputclassifier to predict fraud_type and Is_fraud
+This project builds a **model to detect fraud in medical insurance claims** using **clustering, anomaly detection, and supervised learning**.
 
-### Challenge
-- There are not many known fraudulent cases, so there is a class imbalance, especially when predicting the fraud_type. 
+---
+
+### 🛠 Steps Involved
+- Import modules and datasets  
+- Conduct exploratory data analysis (EDA)  
+- Perform feature engineering and standardization  
+- Use **Bisecting K-means** to cluster the data points  
+- Evaluate clustering quality with **Silhouette Score**  
+- Apply **Isolation Forest** to detect anomalies in the dataset  
+- Combine with known fraudulent cases (including `fraud_type` and `Is_fraud` binary labels)  
+- Split the data into training and testing sets  
+- Train a **RandomForestClassifier** with **MultiOutputClassifier** to predict both `fraud_type` and `Is_fraud`  
+
+---
+
+### ⚠️ Challenge
+There are few known fraudulent cases, resulting in **class imbalance**, particularly when predicting `fraud_type`.
+
+---
+
+### 📓 View the Jupyter Notebook
+🔗 [Open in NBViewer](https://nbviewer.org/github/NaomiMariga/Fraud-Detection/blob/main/Fraud%20main%20-%20kmean_isolation.ipynb)
