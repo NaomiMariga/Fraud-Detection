@@ -27,3 +27,8 @@ There are few known fraudulent cases, resulting in **class imbalance**, particul
 
 ### 📓 View the Jupyter Notebook
 🔗 [Open in NBViewer](https://nbviewer.org/github/NaomiMariga/Fraud-Detection/blob/main/Fraud%20main%20-%20kmean_isolation.ipynb)
+
+---
+
+### 🚀 Future Work
+The next step is to **deploy this model online** to enable real-time fraud detection and monitoring.
